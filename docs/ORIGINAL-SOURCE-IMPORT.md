@@ -1,71 +1,39 @@
-# Import the original PRSL Lab v0.2.0 source
+# Recovered original PRSL Lab v0.2.0 source — provenance and re-import procedure
 
-## Why there is an import step
+**Current status: successfully imported on 2026-10-07.** `lab/` contains the original 31-file Python/C/research tree. The source ZIP was supplied directly as an attachment named `moo2_prsl_lab_v0.2.0(1).zip` (upload-renamed; internal root is `moo2_prsl_lab_v0.2.0/`). Archive size 47,187 B; SHA-256 `2042783f391e635fd0db62ccd5a87a20b5350050afa8d8f9e739abb285e8904e`. The importer was not modified to accept this archive.
 
-The original `moo2_prsl_lab_v0.2.0.zip` is present in the user's earlier project file history (47,187 bytes, created 2026-10-05 UTC). The current file service exposed its title and metadata, **but not a raw ZIP extraction path**. We retrieved and preserved separate text versions of its README, binary research report, target map, test-method file, and five logs. **The original `.py` and `.c` sources are NOT included in this handoff**, and cannot honestly be recreated as byte-identical files from the README alone.
+`lab-import-provenance.json` records the exact ZIP digest, layout and import metadata. All 31 extracted files were checked against the original member bytes. In addition, the original Lab includes its own `SOURCE_SHA256SUMS.txt` covering 30 other files, which `tools/verify_lab_provenance.py` verifies. Retain this directory as an **immutable historical baseline**; develop new code and adapter experiments independently of this archive until a deliberate reviewed migration occurs.
 
-To continue the *existing implementation*, import that original archive. Avoid starting from a new, similar-looking coordinator and losing the tested behavior or subtle fixes.
+## Reproducing the import from a pre-import snapshot (only)
 
-## Procedure
+The importer deliberately refuses to overwrite an existing `lab/` or `lab-import-provenance.json`. **Do not run it against this already integrated repository**. To reproduce, first obtain a *fresh copy of the original pre-import handoff* (SHA-256 `ece9cc49d6705da1fdaa787000643e26d44ae2d07bb7e71c07da155c9aa65647`), and place it in a separate scratch directory. Then:
 
-1. Download `moo2_prsl_lab_v0.2.0.zip` from the project's older conversation/Library files. Confirm you obtained the lab ZIP and **not** a game archive (`Master of Orion 2.zip`) or community patch package.
-2. Clone the new PRSL GitHub repository (or open its existing working directory). Extract the *handoff ZIP* there, **preserving `.git`**. Do not extract inside a second nested repo directory.
-3. Ensure Python 3.11+ is installed, then in the repository root run:
-
-   ```powershell
-   py -3 tools\import_original_lab.py "C:\path\to\moo2_prsl_lab_v0.2.0.zip"
-   ```
-
-   For a check without writing files:
-
-   ```powershell
-   py -3 tools\import_original_lab.py --dry-run "C:\path\to\moo2_prsl_lab_v0.2.0.zip"
-   ```
-
-4. The command will create `lab/` and a `lab-import-provenance.json` file after verifying archive layout, safety limits and expected PRSL source members. It never runs imported code. It refuses to replace a nonempty `lab/` or overwrite prior provenance.
-5. Inspect the files for correct source attribution, license notices and malicious/surprising content. Do not upload any local game binaries or private signing material.
-6. Run these tests and **label their scope**:
-
-   ```powershell
-   py -3 tools\validate_handoff.py
-   py -3 -m unittest discover -s tests -v
-   cd lab
-   py -3 -m pip install -r requirements-lab.txt
-   py -3 -m unittest discover -s tests -v
-   ```
-
-   Optional exact-engine tests require the user-owned `ORION150.EXE` of the pinned hash supplied as `MOO2_ENGINE` locally. The native compatibility-mode probe requires Linux x86-64/GCC and cannot be treated as a Windows test.
-7. Commit imported source and `lab-import-provenance.json` to the PRSL repository only after inspection. The source archive itself belongs in private offline provenance storage, **not** in public Git.
-
-## Expected source tree
-
-Based on the **historical v0.2.0 README**, the original archive is expected to contain at least:
-
-```text
-prsl/binary150.py
-prsl/lab_gate.py
-prsl/state.py
-prsl/packages.py
-prsl/cli.py
-prsl/updates.py
-tools/native_probe.c
-tools/run_native_probe.py
-tests/...
-research/target-map.json
-README.md
-requirements-lab.txt
+```bash
+python tools/import_original_lab.py --dry-run /path/to/moo2_prsl_lab_v0.2.0.zip
+python tools/import_original_lab.py /path/to/moo2_prsl_lab_v0.2.0.zip
+python tools/validate_handoff.py
+python -m unittest discover -s tests -v
+python -m pip install -r lab/requirements-lab.txt
+(cd lab && python -m unittest discover -s tests -v)
 ```
 
-This list comes from the older README; the handoff could not inspect raw ZIP members. The importer may reject a different layout, in which case **inspect manually rather than disabling its safety checks**. No accepted SHA-256 for the source ZIP has been measured here.
+The ZIP import safety policy checks expected source layout, rejects path escape, symlinks, disallowed file types, duplicates and oversized archives. It never executes imported files. Preserve original game media separately and never commit the ZIP, proprietary engine, patch archives or signing keys.
 
-## Merge strategy
+## Original layout
 
-Import intact source into **`lab/`** rather than overwriting the new repo's root README or current documentation. This preserves the historical lab CLI (`python -m prsl.cli`) and test imports. Once the real implementation has been inspected, refactor gradually into production `src/` modules while preserving regression tests and version history. Retain the imported lab as a reproducible historical baseline until formally retired.
+```text
+lab/prsl/state.py              offline readiness coordinator
+lab/prsl/binary150.py          exact-build LE/debug/relocation research
+lab/prsl/lab_gate.py           synthetic x86 gate experiment
+lab/prsl/packages.py           offline workspace verification
+lab/prsl/cli.py                research CLI; `--mode prsl` fails closed
+lab/prsl/updates.py            offline signature/freshness checks
+lab/tests/                     original tests (52 discovered)
+lab/tools/native_probe.c       isolated instruction probe; not DOSBox
+lab/tools/run_native_probe.py  Linux toolchain wrapper
+lab/research/                   exact-engine research records
+lab/evidence/                   ORIGINAL historical test results
+lab/SOURCE_SHA256SUMS.txt       per-member hash list
+```
 
-## What this handoff does NOT do
-
-- It does not import source from the non-PRSL launcher ZIP.
-- It does not provide an executable game patch or memory injection.
-- It does not download commercial game files or put them in Git.
-- It does not prove live 1.50.26 multiplayer or any Windows/macOS runtime compatibility.
-- It does not choose a license or assert upstream approval.
+This import does NOT create a live game patch, implement the pre-game lobby, or establish any engine or LAN validation. Native memory addresses must be resolved from the *loaded* image after verifying exact engine identity; do not translate object/file offsets mechanically.

@@ -1,0 +1,10 @@
+$ ['/opt/pyvenv/bin/python', 'tools/validate_handoff.py'] (cwd=.)
+Python 3.13.5 on Linux-6.18.44-x86_64-with-glibc2.41
+exit=0
+
+STDOUT:
+PASS: handoff documents and research markers valid (26 required artifacts)
+NOTICE: original lab source imported; its own tests still require separate execution
+
+
+STDERR:

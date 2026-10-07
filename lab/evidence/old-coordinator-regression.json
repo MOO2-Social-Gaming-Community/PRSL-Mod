@@ -1,0 +1,7 @@
+{
+  "version": "0.1.0",
+  "higher_sequence_duplicate_ready_during_grace": true,
+  "safe_ack_after_duplicate": false,
+  "committed_despite_invalidated_ack": true,
+  "phase_after": "COMMITTED"
+}

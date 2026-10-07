@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+workspaces/
+*.EXE
+*.LBX
+*.GAM
+*.bin
+*.zip

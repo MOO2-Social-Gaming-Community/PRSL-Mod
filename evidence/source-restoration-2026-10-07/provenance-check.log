@@ -1,0 +1,9 @@
+$ ['/opt/pyvenv/bin/python', 'tools/verify_lab_provenance.py'] (cwd=.)
+Python 3.13.5 on Linux-6.18.44-x86_64-with-glibc2.41
+exit=0
+
+STDOUT:
+PASS: Lab v0.2.0 import provenance pinned; 31/31 original files intact, 30/30 listed-member SHA-256 hashes match
+
+
+STDERR:

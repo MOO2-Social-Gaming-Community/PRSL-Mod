@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/usr/bin/dosbox",
+    "-conf",
+    "/mnt/data/prsl_work/managed-15026/community-dosbox.conf"
+  ],
+  "configuration": "# Generated community-mode profile; PRSL is not injected.\n[sdl]\nfullscreen=false\n[cpu]\ncore=normal\ncycles=auto\n[ipx]\nipx=true\n[autoexec]\nmount c \"/mnt/data/prsl_work/managed-15026/game\"\nc:\nIPXNET STARTSERVER 21300\nORION150.EXE\nexit\n",
+  "mode": "community",
+  "executed": false
+}

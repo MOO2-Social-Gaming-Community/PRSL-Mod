@@ -6,3 +6,5 @@
 *.log text eol=lf
 *.yml text eol=lf
 *.yaml text eol=lf
+# Preserve exact recovered source bytes on Windows Git checkouts, too.
+lab/** text eol=lf

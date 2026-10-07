@@ -34,9 +34,9 @@ These records preserve what the MOO2-SGC project has chosen versus what remains 
 
 **Question:** local companion window vs in-game overlay vs extension tab. User experience must be clear, but verify game UI/input implications before commitment. Chat must remain optional.
 
-## D-009 — Original source archive merge (action required)
+## D-009 — Original source archive merge (accepted and completed 2026-10-07)
 
-**Decision:** preserve v0.2.0 Python/C source in its own `lab/` directory once recovered rather than silently rewriting. **Status:** original ZIP available in earlier project Library; raw bytes were not available to this handoff process.
+**Decision:** preserve v0.2.0 Python/C source in its own `lab/` directory once recovered rather than silently rewriting. **Status:** Source ZIP directly uploaded on October 7, 2026; archive SHA-256 `2042783f391e635fd0db62ccd5a87a20b5350050afa8d8f9e739abb285e8904e`; 31 original files imported intact into `lab/` with provenance and offline test reruns. Preserve this historical lab unchanged, and do new engineering outside it.
 
 ## D-010 — License and redistribution (open before public code release)
 

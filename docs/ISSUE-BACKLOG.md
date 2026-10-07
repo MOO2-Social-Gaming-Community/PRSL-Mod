@@ -2,11 +2,11 @@
 
 Each entry includes a completion criterion and a dependency, rather than conflating research with implementation.
 
-## 1. Import historical PRSL Lab v0.2.0 source without changes
+## 1. Import historical PRSL Lab v0.2.0 source without changes — **COMPLETED LOCALLY (awaiting GitHub commit)**
 
-**Type:** repository/critical. **Dependencies:** original `moo2_prsl_lab_v0.2.0.zip` in user's project Library. **Acceptance:** safe source import, reviewed `lab-import-provenance.json`, no proprietary files, original README/tests/source available, first commit captures source baseline without editing it.
+**Type:** repository/critical. **Dependencies:** satisfied by direct uploaded source ZIP on 2026-10-07. **Acceptance:** safe source import, reviewed `lab-import-provenance.json`, no proprietary files, original README/tests/source available, first commit captures source baseline without editing it.
 
-## 2. Reproduce v0.2.0 Python suite and native probe with test environment metadata
+## 2. Reproduce v0.2.0 Python suite and native probe with test environment metadata — **PARTIAL (offline suite rerun)**
 
 **Type:** validation/high. **Dependencies:** #1; user-owned exact-hash engine for binary tests; supported Linux x86-64 GCC for native probe. **Acceptance:** original suite rerun, original-vs-new results compared, skipped conditions explained, logs sanitized, no full-game claims from isolated tests.
 

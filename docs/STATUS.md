@@ -1,48 +1,30 @@
-# PRSL status assessment — 2026-10-07
+# PRSL evidence/status — 2026-10-07 (after original-source import)
 
-## Evidence grading
+## Claim levels
 
-- **Verified in previous research** means a retained artifact logs a test that historically passed under its own stated conditions. It **does not** mean this handoff reran the source or the game.
-- **Reproduced in this handoff** means a test executed during the 2026-10-07 packaging process; limited to tooling/document validation.
-- **Proposed** means a design requirement without a demonstrated implementation.
-- **Blocked** means a missing dependency, unavailable source, or unvalidated live behavior.
+- **Rerun and passed here:** source recovery/integrity tooling and Python tests actually executed in this recovery session.
+- **Historical evidence only:** results retained from the earlier Lab research, not reexecuted now.
+- **Unimplemented / not validated:** everything required to affect running MOO2 safely or to coordinate independent clients.
 
-| Finding | Classification | Evidence and limit |
+| Component | Evidence level | Finding and limitation |
 |---|---|---|
-| PRSL v0.2.0 existed | Historical artifact | Archived README and original ZIP metadata; Python/C source ZIP must still be imported |
-| 52 Python tests passed | Historical verified | `research/archive-v0.2.0/evidence/python-tests.log`; coordinator, binary, packages and catalog; exact engine used for optional tests |
-| 30 isolated native x86 checks passed | Historical verified | `.../evidence/native-probe.log`; Linux 64-bit harness switched into 32-bit compatibility mode; NOT a real game |
-| Workspace builder verified 944 files | Historical verified | 816 base + 128 patch files; overlay changed no base files for supplied archives only |
-| 6 workspace safety checks passed | Historical verified | Corruption failure, saves preserved, live PRSL refused, archives unchanged, workspace restored |
-| Seven-byte `Human_Hit_Next_Turn_` getter identified | Historically mapped exact engine | Does NOT submit End Turn; must not be hooked as submit point |
-| Manual branch intercept identified at object `0x76D78` | Laboratory-tested candidate | Does not cover automatic caller, keyboard pathways or real runtime |
-| 1.50 community network wrapper traced | Laboratory structural evidence | Preserve wrapper/RNG behavior; networked engine execution NOT verified |
-| Repeat READY during grace fixed | Historical regression fix | v0.1.0 bug reproducible; corrected in v0.2.0 coordinator tests |
-| Live adapter and screen | **Blocked / not implemented** | Neither installed in v0.4.7 nor demonstrated in game |
-| Authenticated PRSL networking | **Not implemented** | The native IPX network is not a PRSL coordinator transport |
-| Pre-game lobby / new Chat | **Proposed separately** | Not part of the v0.2.0 in-game ready prototype |
-| Windows/macOS PRSL acceptance | **Not run** | Python portability does not prove runtime compatibility |
+| Original 0.2.0 Python/C source | **Reproduced** | 31 original members copied byte-for-byte from directly uploaded 47,187-byte ZIP; source SHA-256 `2042783f391e635fd0db62ccd5a87a20b5350050afa8d8f9e739abb285e8904e` |
+| Offline Python test suite | **Rerun** | 52 total; 43 passed, 9 skipped needing `MOO2_ENGINE`, Python 3.13.5/Linux |
+| Safe importer/handoff tests | **Rerun** | 11/11 passed before and after source import; source import dry-run and real import passed |
+| Source checksums | **Rerun** | All 31 extracted members identical to original archive; `lab/SOURCE_SHA256SUMS.txt` indexes 30 other files |
+| Original isolated x86 probe | **Historical only** | 30/30 checks recorded in `lab/evidence/native-probe.log`, NOT rerun in this recovery environment |
+| Archive/workspace build | **Historical only** | 944 files verified with the original supplied game and patch archives; NOT reproduced here |
+| Workspace safety scenarios | **Historical only** | Six prior checks recorded; no current game archives supplied |
+| `Human_Hit_Next_Turn_` getter | **Historical exact-engine mapping** | Read-only flag getter, **not** an End Turn submission point |
+| Manual Next button candidate | **Historical isolated candidate** | Object offset `0x00076D78`, file offset `0x0010C40C`, not a certified live/runtime hook; automatic caller remains |
+| Safe in-game native adapter, UI and coordinator transport | **Not built/validated** | No game-native Ready/Unready, no authenticated two-client barrier, no live native release |
+| Pre-game lobby / optional Chat | **Out of scope** | Independent components and projects, no dependency for PRSL |
+| Windows/macOS MOO2 and multiplayer acceptance | **Not run** | Python test execution on Linux is not a portable game test |
 
-## Version boundary
+## Implications
 
-- **Historical feature source:** PRSL Lab v0.2.0 (October 5, 2026 UTC).
-- **Game used for reverse engineering:** fan patch 1.50.26, `ORION150.EXE` SHA-256 `2db296e052419250d21866f7c23ac2978a33b3c05b451a9516f06599b91c3f5c`.
-- **Separate manager:** MOO2-SGC Launcher v0.4.7; baseline 1.40b23 and optional 1.50.26 environments; PRSL OFF.
-- **Handoff:** `2026-10-07`, documents and original-source import utility, NOT v0.3.0 of the PRSL engine.
+The historical Lab source is now genuinely available for future engineering and regression protection. It is an offline coordinator plus an exact-engine research test harness, **not a playable mod**. The nine skipped binary tests need a legitimate exact-build `ORION150.EXE`, never added to CI. The native probe also requires a suitable Linux/GCC 32-bit compatibility environment. Even if both pass, a separate DOSBox guest adapter and real multi-client acceptance are still required.
 
-## Unresolved items that block a playable release
+PRSL remains disabled in the separately versioned launcher. Stop and diagnose any uncertainty after native submission; do not infer a game turn happened from a coordinator transition. Use `docs/ROADMAP.md` and `docs/ACCEPTANCE-TESTS.md` for the next evidence-gated milestones.
 
-1. Original v0.2.0 source archive must be imported into this repository without rewriting its history.
-2. Source and historical tests must be reviewed and rerun with dependency/toolchain records.
-3. A live DOSBox/guest engine adapter must identify the *loaded* binary, phase and safe point.
-4. All turn submission paths—including automatic `Do_Begin_Of_Turn_`—must be traced, intercepted or safely constrained.
-5. Authenticated epoch-scoped PRSL coordinator and message transport must connect actual clients.
-6. Ready/Unready must preserve the living game event loop and native network behavior; release once; UI/state observability must be complete.
-7. Real cross-machine MOO2 sessions must demonstrate success and no desync, including failure/reconnect/save cases.
-8. Licensing and redistribution review must precede general public software release.
-
-## Evidence location and caveats
-
-Primary technical records: `research/archive-v0.1.0/DESIGN.md` and `research/archive-v0.2.0/{README.md,BINARY_REPORT.md,TEST_METHOD.md,target-map.json,evidence/}`. Archived source archive name: `moo2_prsl_lab_v0.2.0.zip` (47,187 bytes); no SHA-256 could be computed during this handoff because archive raw bytes were inaccessible.
-
-Separate launcher references: `reference/launcher/` — PRSL disabled and signed-updater/network scope concerns; not evidence of playable PRSL.
+The recovered source archive and retained historical handoff manifests are intentionally not packaged into Git; see `provenance/README.md` and `lab-import-provenance.json`.

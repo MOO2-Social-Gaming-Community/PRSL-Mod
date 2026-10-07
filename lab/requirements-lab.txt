@@ -1,0 +1,3 @@
+# Reproduction version installed in this Linux test environment.
+# Needed only for signed-catalog verification and its tests.
+cryptography==46.0.4

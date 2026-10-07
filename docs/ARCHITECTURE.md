@@ -37,7 +37,7 @@ MOO2-SGC Launcher             (separate repository)
              local lifecycle boundary
                     v
 PRSL integration/service      (future, this repository)
-   +-- state coordinator      (historical offline prototype, original source ZIP)
+   +-- state coordinator      (`lab/prsl/state.py`, recovered offline code)
    +-- game adapter           (exact-build reverse engineering only)
    +-- control transport      (unimplemented; auth + epochs + reconnection)
    +-- local readiness UI     (unimplemented)

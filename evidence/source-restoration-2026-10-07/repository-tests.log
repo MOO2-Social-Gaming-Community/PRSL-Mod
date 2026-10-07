@@ -1,0 +1,30 @@
+$ ['/opt/pyvenv/bin/python', '-m', 'unittest', 'discover', '-s', 'tests', '-v'] (cwd=.)
+Python 3.13.5 on Linux-6.18.44-x86_64-with-glibc2.41
+exit=0
+
+STDOUT:
+
+
+STDERR:
+test_dry_run_writes_nothing (test_import_original_lab.ImporterTests.test_dry_run_writes_nothing) ... ok
+test_reject_archive_outside_root (test_import_original_lab.ImporterTests.test_reject_archive_outside_root) ... ok
+test_reject_drive_name (test_import_original_lab.ImporterTests.test_reject_drive_name) ... ok
+test_reject_duplicate_casefold (test_import_original_lab.ImporterTests.test_reject_duplicate_casefold) ... ok
+test_reject_executable (test_import_original_lab.ImporterTests.test_reject_executable) ... ok
+test_reject_existing_lab (test_import_original_lab.ImporterTests.test_reject_existing_lab) ... ok
+test_reject_missing_source_members (test_import_original_lab.ImporterTests.test_reject_missing_source_members) ... ok
+test_reject_symlink (test_import_original_lab.ImporterTests.test_reject_symlink) ... ok
+test_reject_traversal (test_import_original_lab.ImporterTests.test_reject_traversal) ... ok
+test_repository_validator_passes (test_import_original_lab.ImporterTests.test_repository_validator_passes) ... ok
+test_valid_source_import (test_import_original_lab.ImporterTests.test_valid_source_import) ... ok
+test_actual_restoration_passes (test_lab_provenance.SourceRecoveryIntegrityTests.test_actual_restoration_passes) ... ok
+test_changed_sum_file_is_caught (test_lab_provenance.SourceRecoveryIntegrityTests.test_changed_sum_file_is_caught) ... ok
+test_extra_file_is_caught (test_lab_provenance.SourceRecoveryIntegrityTests.test_extra_file_is_caught) ... ok
+test_forged_zip_provenance_is_caught (test_lab_provenance.SourceRecoveryIntegrityTests.test_forged_zip_provenance_is_caught) ... ok
+test_modified_source_is_caught (test_lab_provenance.SourceRecoveryIntegrityTests.test_modified_source_is_caught) ... ok
+test_removed_file_is_caught (test_lab_provenance.SourceRecoveryIntegrityTests.test_removed_file_is_caught) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.032s
+
+OK

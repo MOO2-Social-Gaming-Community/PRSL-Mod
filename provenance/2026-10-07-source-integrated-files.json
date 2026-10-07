@@ -1,0 +1,457 @@
+{
+  "date": "2026-10-07",
+  "files": [
+    {
+      "bytes": 226,
+      "path": ".gitattributes",
+      "sha256": "3700efc65ea86462019c9d0800ccfbbec3be460c501135378cbf9964bc0e6c78"
+    },
+    {
+      "bytes": 514,
+      "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+      "sha256": "439f604986e732b6d1552a1a5d23fa9ce04bed1923a05d1d3b2ebee6a9c25354"
+    },
+    {
+      "bytes": 27,
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a"
+    },
+    {
+      "bytes": 480,
+      "path": ".github/ISSUE_TEMPLATE/research-task.md",
+      "sha256": "f58b6eebe4a9c71d8454f1c599043467f65f73cbb93f487e80fbd1950fbcfcb9"
+    },
+    {
+      "bytes": 1346,
+      "path": ".github/workflows/checks.yml",
+      "sha256": "09d8b3f71d8ec00527d7cd9ec656e39b5c4a6584a34de2dde3bbe3f43883db6b"
+    },
+    {
+      "bytes": 409,
+      "path": ".gitignore",
+      "sha256": "f845fecae1208fe1d4fd8ca3de038dc0fc2f4feccb6905ae51fc089fc087d12a"
+    },
+    {
+      "bytes": 2394,
+      "path": "CHANGELOG.md",
+      "sha256": "858d41961da1b1243d59167a553da067b3c5878cfb0957d6356a7c4822fb5186"
+    },
+    {
+      "bytes": 2114,
+      "path": "CONTRIBUTING.md",
+      "sha256": "b750e16cfaba258bbbe5935d744c058051f388d3030f9f92e9717de112622f91"
+    },
+    {
+      "bytes": 2652,
+      "path": "GITHUB-UPLOAD-START-HERE.md",
+      "sha256": "721a0978b3f09acb68d938c18f4dfa8543e2f5855779374d16ef973f408f7228"
+    },
+    {
+      "bytes": 1262,
+      "path": "LICENSE-STATUS.md",
+      "sha256": "8a5cfbb862fd2ee686da34398b4019786c59b890b94a6725520e733b6257fea3"
+    },
+    {
+      "bytes": 5608,
+      "path": "README.md",
+      "sha256": "ab702c9c848d2636f81e3b1ec3ee4891bf9c8e7df3fbfe8cb69c368cd8d5881c"
+    },
+    {
+      "bytes": 1369,
+      "path": "RESEARCH-INDEX.md",
+      "sha256": "e3ab3af0d5c839077026fa931ba655ed7bfd58abb1942ccbddea0fb8847d294c"
+    },
+    {
+      "bytes": 1366,
+      "path": "SECURITY.md",
+      "sha256": "3237a749edd1298014c7e0faa4d2c1b8c63b30c23c391793da5b5885ba1d3165"
+    },
+    {
+      "bytes": 1538,
+      "path": "STATUS.md",
+      "sha256": "282673dbdaada92603c1122bedf1ec7d39a10373c3911c222840fdfcf68c80d5"
+    },
+    {
+      "bytes": 5122,
+      "path": "docs/ACCEPTANCE-TESTS.md",
+      "sha256": "5b208532575d68e7765d1662df15a02c11c42ff6d06c4cb17bf1bb875d00f0ba"
+    },
+    {
+      "bytes": 5997,
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "8753dd0443b11ad8bbcef2ce784bd738b1dff354b6a651d4f17114e8bdad096e"
+    },
+    {
+      "bytes": 3363,
+      "path": "docs/DECISIONS.md",
+      "sha256": "28910ec69611707584fc0783d479b2ca63f28a316df5350b1ec9986aadb02d3c"
+    },
+    {
+      "bytes": 4984,
+      "path": "docs/ENGINE-RESEARCH.md",
+      "sha256": "82d3ff0ea0de8ad7e068956f0edfb35483d879aef29f935de789db050f65286d"
+    },
+    {
+      "bytes": 2443,
+      "path": "docs/HANDOFF-CHECKLIST.md",
+      "sha256": "3d5ad0d56eec4972c1908ca7f7e2e9807ae47aef1430c2cadfaa9ae25cfba6b6"
+    },
+    {
+      "bytes": 2532,
+      "path": "docs/HANDOFF-SOURCES.md",
+      "sha256": "e3233055757508a5a346a5757f755f09ffabf5cae7925d059261ce874ac87a35"
+    },
+    {
+      "bytes": 3981,
+      "path": "docs/ISSUE-BACKLOG.md",
+      "sha256": "b84d424f76f7b35edbd8bf089bb2bc1fed2824a3277375f12d6399470a6951e8"
+    },
+    {
+      "bytes": 2906,
+      "path": "docs/LAUNCHER-INTEGRATION.md",
+      "sha256": "649c07f04a054f7ea6e88a6ab7e039d874cd8c1285132a9912249612ae9c585e"
+    },
+    {
+      "bytes": 3129,
+      "path": "docs/ORIGINAL-SOURCE-IMPORT.md",
+      "sha256": "716c28346166c7ffd31ad15c204385274de56deef4deafd6b9ced14e26d906dd"
+    },
+    {
+      "bytes": 6014,
+      "path": "docs/RD-HISTORY.md",
+      "sha256": "c1eda53bd022acec41561cab1ed91598ad878c67d2561aeaa7ff8e31deae3719"
+    },
+    {
+      "bytes": 6610,
+      "path": "docs/ROADMAP.md",
+      "sha256": "f92af78bed03e0005ab8813510bfc983c720d83ce3a1c959ce0dad50d00446f3"
+    },
+    {
+      "bytes": 5079,
+      "path": "docs/SOURCE-RESTORATION-2026-10-07.md",
+      "sha256": "3b58e4840d2299c06e1d900db50061324ace3e9f13b1355d13e0ac40dd4dfa4f"
+    },
+    {
+      "bytes": 3227,
+      "path": "docs/STATUS.md",
+      "sha256": "afa30197d79492b0b1524e3d576e48cdc93d1e3c26a9b7c042b9a4e44666c954"
+    },
+    {
+      "bytes": 6175,
+      "path": "evidence/source-restoration-2026-10-07/original-lab-tests.log",
+      "sha256": "392e6d4428cf5f0102698665c7052ebd736c090ab90dbf0a2fb26e2760ebef4f"
+    },
+    {
+      "bytes": 263,
+      "path": "evidence/source-restoration-2026-10-07/provenance-check.log",
+      "sha256": "564e0d23128a759bcede8b2cbe14d30ea9b5d8959cfd9a54c1f70b897e098fdd"
+    },
+    {
+      "bytes": 2108,
+      "path": "evidence/source-restoration-2026-10-07/repository-tests.log",
+      "sha256": "edbef9329dd09ba5389add84263a99735153096c15e9b19a7df07aa04ba0dedd"
+    },
+    {
+      "bytes": 305,
+      "path": "evidence/source-restoration-2026-10-07/research-validation.log",
+      "sha256": "56f2aa2c39efe569e35ce74a57b9f8b2f4c3ad5df87bac50288531c798919049"
+    },
+    {
+      "bytes": 1286,
+      "path": "evidence/source-restoration-2026-10-07/validation-summary.json",
+      "sha256": "2f8b7e957fddd06fad68ee194b2d99bd6194bf9c64388a80322cc69a08859f4a"
+    },
+    {
+      "bytes": 61,
+      "path": "lab/.gitignore",
+      "sha256": "7800dfc2c402887415a82e0d2787749665c2d235a26658268f12d15cf79f70c7"
+    },
+    {
+      "bytes": 1368,
+      "path": "lab/CHANGELOG.md",
+      "sha256": "1218b71141f487320f114edb146d1158202d8e162afd541870e763c481da2160"
+    },
+    {
+      "bytes": 5031,
+      "path": "lab/NEXT_STEPS.md",
+      "sha256": "3742ed227c6e2550a1455cb6749f5bb39b91f3bd52fedd164621b9a189a7f03a"
+    },
+    {
+      "bytes": 6968,
+      "path": "lab/README.md",
+      "sha256": "2a87f10721aa405729140e034982f5ead890d59a6399629d9d6220898458a798"
+    },
+    {
+      "bytes": 2657,
+      "path": "lab/SOURCE_SHA256SUMS.txt",
+      "sha256": "ea1788762d6ab854537c1aa3b7082c3c5174ee6f4b5f9026ffa2e6acc639acfa"
+    },
+    {
+      "bytes": 294,
+      "path": "lab/evidence/installer-build.json",
+      "sha256": "d829d34e3eb6958250cd070299f4046e46b312a4de832a6ca307558e57d8aa87"
+    },
+    {
+      "bytes": 182,
+      "path": "lab/evidence/installer-verify.json",
+      "sha256": "e6d1abe13d8ee61fa825c661be95bc138e68c516d4d09f7a8cbbb4146ca395a3"
+    },
+    {
+      "bytes": 433,
+      "path": "lab/evidence/launcher-host-dry-run.json",
+      "sha256": "68e92934064a0f2fd5b11bd27687aa94b4bd5bac3c8f5b68cfcc6b4abd2b8442"
+    },
+    {
+      "bytes": 1406,
+      "path": "lab/evidence/native-probe.log",
+      "sha256": "3be441cc5ac61627d72475c65bc37a0a4ce1ba23b070017c6198307a233efc42"
+    },
+    {
+      "bytes": 193,
+      "path": "lab/evidence/old-coordinator-regression.json",
+      "sha256": "28d3aa33d187809a2eabd6b4e497d8458b8c345f51cda54a36d243611777ed41"
+    },
+    {
+      "bytes": 5445,
+      "path": "lab/evidence/python-tests.log",
+      "sha256": "5e9f88b95d7da5501ffa5bbe55eab13851cd9fbc90cec72218905a05df069210"
+    },
+    {
+      "bytes": 1039,
+      "path": "lab/evidence/summary.json",
+      "sha256": "efd957c71188978313596ba655cfa1e0ddedd254b6a19ff8082cf04a154070b6"
+    },
+    {
+      "bytes": 565,
+      "path": "lab/evidence/workspace-integration-tests.json",
+      "sha256": "b51aa5a298775d80a925260733fafc9a53c4abbac1ba37cf1a8bb36fe9ecb09b"
+    },
+    {
+      "bytes": 97,
+      "path": "lab/prsl/__init__.py",
+      "sha256": "73c6eac833f5b42bd571470b612600f5e942cb09285638369866badc76499e89"
+    },
+    {
+      "bytes": 11934,
+      "path": "lab/prsl/binary150.py",
+      "sha256": "0d35ecad59e8a7f793d40d8cecb69f4803951642fee3027baa7d58c8fc577b83"
+    },
+    {
+      "bytes": 2745,
+      "path": "lab/prsl/cli.py",
+      "sha256": "89b6d2dd7257f1eb9ac491cc4539fe8ba30611dc9041c7b4305d3cba1203c683"
+    },
+    {
+      "bytes": 2107,
+      "path": "lab/prsl/lab_gate.py",
+      "sha256": "c4472d4dc2dad0824ecc6e639120f2cce39b3675440e836ce90f155d40b07655"
+    },
+    {
+      "bytes": 10698,
+      "path": "lab/prsl/packages.py",
+      "sha256": "e378bc3a49284a2b0432c6311087bb9000b01b8aa7fd6d11b52a76d8e7508c8e"
+    },
+    {
+      "bytes": 7247,
+      "path": "lab/prsl/state.py",
+      "sha256": "2dbd0ab38622070de7445f437a59a85643acc70f050813c2a44b5f3987b046bd"
+    },
+    {
+      "bytes": 3386,
+      "path": "lab/prsl/updates.py",
+      "sha256": "b16234b98c2ca0efa8d8cf87e6b999c7565c6430fed31acf0f3f628bdfad51cd"
+    },
+    {
+      "bytes": 147,
+      "path": "lab/requirements-lab.txt",
+      "sha256": "0b0a3d4d3ea9fa8b1859e627b802ea7f61199aaabb8bb1fff16a9ec155ef41fd"
+    },
+    {
+      "bytes": 10784,
+      "path": "lab/research/BINARY_REPORT.md",
+      "sha256": "f5fa8d6857fb7d852eca5a9ae2de3f7c2da85fb654c89dd87b3bdeca4bbf0dd5"
+    },
+    {
+      "bytes": 6588,
+      "path": "lab/research/TEST_METHOD.md",
+      "sha256": "80b65488d2073b36d6e9dc12db399590668af31a515612af0c0113a8aa3835e9"
+    },
+    {
+      "bytes": 5177,
+      "path": "lab/research/target-map.json",
+      "sha256": "53d6e3e07442aa8c14c1121aecb00dfbe27dc5b1a7dd71dd498bdcaa2703d827"
+    },
+    {
+      "bytes": 2667,
+      "path": "lab/tests/test_binary150.py",
+      "sha256": "03a4a2fe0673a115b1545212a84449831390361fc09639ccc551f686db03a2b6"
+    },
+    {
+      "bytes": 2681,
+      "path": "lab/tests/test_packages.py",
+      "sha256": "15fe458b5f3df55248825582bc40c3768f7cc42f6dab43b8d40723e935cebcca"
+    },
+    {
+      "bytes": 4291,
+      "path": "lab/tests/test_state.py",
+      "sha256": "e4013c022165d49136346137ac7edb5c99631ab25cd868db3c6c7439cc5016cb"
+    },
+    {
+      "bytes": 2717,
+      "path": "lab/tests/test_state_regressions.py",
+      "sha256": "5c6cc71b756c80951f47c76d38df3f1e7e3665db63c4c535f85b2052d3290acb"
+    },
+    {
+      "bytes": 2791,
+      "path": "lab/tests/test_updates.py",
+      "sha256": "2661dcc47afff6c82a4458aafb0359a480722dcb9451b3f876aa75a38f4228a8"
+    },
+    {
+      "bytes": 8878,
+      "path": "lab/tools/native_probe.c",
+      "sha256": "b5f8c1e095db3d98669bc0db25abf6827a9334c3bff4897801fb5855398c1706"
+    },
+    {
+      "bytes": 1750,
+      "path": "lab/tools/run_native_probe.py",
+      "sha256": "f9f8ed22519adccd6a58bda2bed18fcce05edb9a725841b2afa33f747ab53270"
+    },
+    {
+      "bytes": 447,
+      "path": "lab-import-provenance.json",
+      "sha256": "331a09f6f1654713c37920ab9d808a9a3e43914ad8cc1d12967e89986f28e8cf"
+    },
+    {
+      "bytes": 7298,
+      "path": "provenance/2026-10-07-before-source-import/HANDOFF-MANIFEST.json",
+      "sha256": "ec05b724e674d9a896fa19688b744fbf9aff1d4f2807fbb5ed5a3bd0a9a239fc"
+    },
+    {
+      "bytes": 485,
+      "path": "provenance/2026-10-07-before-source-import/NOTE.md",
+      "sha256": "e6403f3f19901e81a517b117ec6a878b8273765f4ae86bf33081e219702d0f81"
+    },
+    {
+      "bytes": 808,
+      "path": "provenance/2026-10-07-before-source-import/RECOVERY-OVERLAY-MANIFEST.json",
+      "sha256": "31dc60c2ab5d745c8ff30d5ba19d3034cd8664abb6865b2ad3914ab3110cd43c"
+    },
+    {
+      "bytes": 1428,
+      "path": "provenance/2026-10-07-before-source-import/RECOVERY-START-HERE.md",
+      "sha256": "f151ced2858266572570da1469b81a116ae6b979f83276d2ccf925d440b50a00"
+    },
+    {
+      "bytes": 1570,
+      "path": "provenance/2026-10-07-before-source-import/docs/RECOVERY-ARCHIVES-INDEX.json",
+      "sha256": "f6e117c50ef55f5f9fc5f5cf39a0b1c230ca9ce64dc3f4dedbd0b0aa84661a54"
+    },
+    {
+      "bytes": 6935,
+      "path": "provenance/2026-10-07-before-source-import/docs/RECOVERY-AUDIT-2026-10-07.md",
+      "sha256": "025d19fbb8fd4cf29749c82e4b35caaa2cf9f4926ad26f89085cc6f077263dfc"
+    },
+    {
+      "bytes": 896,
+      "path": "provenance/README.md",
+      "sha256": "97aba7121c6a2d7bda7c150afffdbb935afd1a5813f8170319d1398431a1cbb9"
+    },
+    {
+      "bytes": 5702,
+      "path": "reference/launcher/NETWORK-AND-PROFILES-0.4.7.md",
+      "sha256": "b1c667304fa005b277b7e4b2b69ff5d630928a9ac42a2f4c20ed07d70ddf1268"
+    },
+    {
+      "bytes": 16207,
+      "path": "reference/launcher/REQUIREMENTS-0.1.0.md",
+      "sha256": "753d5f9d55c2d6e9bfba715713113e656eff198598d0480a66d2e9ed9a4988d8"
+    },
+    {
+      "bytes": 4414,
+      "path": "reference/launcher/TEST-REPORT-0.4.7.md",
+      "sha256": "f7d661e68d3e7005edaa40169a18f10e8dc1d2da78b4b6350cae78c1ef00aa27"
+    },
+    {
+      "bytes": 18246,
+      "path": "research/archive-v0.1.0/DESIGN.md",
+      "sha256": "46d524c2a56b79f74006a2241b54f2a052f38bceeb0599e25885c3b21644fc1f"
+    },
+    {
+      "bytes": 10783,
+      "path": "research/archive-v0.2.0/BINARY_REPORT.md",
+      "sha256": "03e576a275ee5047c8700740d88dcf2f87397c08aa14209865569d1c8929d125"
+    },
+    {
+      "bytes": 6967,
+      "path": "research/archive-v0.2.0/README.md",
+      "sha256": "f8736bf699146f410817b37266fef7c30e7517de44b203716c9f25d191259a93"
+    },
+    {
+      "bytes": 6587,
+      "path": "research/archive-v0.2.0/TEST_METHOD.md",
+      "sha256": "95198119f349caa6a1065b1e4ae9968f5cbdb03ce8138c4dd6a97227985567ff"
+    },
+    {
+      "bytes": 181,
+      "path": "research/archive-v0.2.0/evidence/installer-verify.json",
+      "sha256": "a3547b1e1b8aba6cca4e730bde7b4512f1e66da4f0c7269445e88ff1b8af7623"
+    },
+    {
+      "bytes": 1405,
+      "path": "research/archive-v0.2.0/evidence/native-probe.log",
+      "sha256": "dc2838bac9079a85b94a0534c86ca90e3a85a50da16dedbed9056819801cda28"
+    },
+    {
+      "bytes": 192,
+      "path": "research/archive-v0.2.0/evidence/old-coordinator-regression.json",
+      "sha256": "6cba180418ca58613413ad232d4c2b4dd52e90298c3ef1a2d7a1badd0e9974c2"
+    },
+    {
+      "bytes": 5444,
+      "path": "research/archive-v0.2.0/evidence/python-tests.log",
+      "sha256": "075ae4e16c7c4c543266e287e8bb86d86a298f78f2db2f1e840f70aab8b5e76c"
+    },
+    {
+      "bytes": 564,
+      "path": "research/archive-v0.2.0/evidence/workspace-integration-tests.json",
+      "sha256": "28d3dd01f3f50aa3711470bfa32a2fae239bfe95b4cf861ee18a0c77dbb5ddbb"
+    },
+    {
+      "bytes": 5176,
+      "path": "research/archive-v0.2.0/target-map.json",
+      "sha256": "25d8208344b9dfccd705cb16af8f6f39ded2bef9add2975c75208b1ab60d2e9c"
+    },
+    {
+      "bytes": 4110,
+      "path": "tests/test_import_original_lab.py",
+      "sha256": "48e537f5f3e60c22572272dd45135505896ff408613a46120e27855324de3caa"
+    },
+    {
+      "bytes": 2420,
+      "path": "tests/test_lab_provenance.py",
+      "sha256": "aba4f9799275adacf7b4176bd3cd0d77c420cb821b3ca5fb7ba4ac86a6e252a4"
+    },
+    {
+      "bytes": 9586,
+      "path": "tools/import_original_lab.py",
+      "sha256": "11292903f8b04f56d956c1a5ba6fe50fe47c064e8d03c220e29e485d440b320d"
+    },
+    {
+      "bytes": 3942,
+      "path": "tools/validate_handoff.py",
+      "sha256": "c6a017428e05b94c7a3de9a26f3f28b9bd68f403b9b7278d4b9f6298c6bdd65f"
+    },
+    {
+      "bytes": 4488,
+      "path": "tools/verify_lab_provenance.py",
+      "sha256": "b7b7fdbe5b97ba070b268e3be077db869203959242544962a82847decbde7abf"
+    }
+  ],
+  "historical_feature_version": "0.2.0",
+  "kind": "historical-github-repository-source-restoration-snapshot",
+  "not_a_playable_mod": true,
+  "original_lab_members": 31,
+  "original_lab_zip_sha256": "2042783f391e635fd0db62ccd5a87a20b5350050afa8d8f9e739abb285e8904e",
+  "repo_snapshot_files_excluding_self": 89,
+  "schema": 1
+}

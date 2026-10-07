@@ -1,48 +1,25 @@
-# Source inventory, retrieval and provenance
+# Recovered PRSL source inventory and evidence
 
-Source discovery date: **2026-10-07**. This document inventories what could actually be retrieved and what remains inaccessible; it is not evidence of newly executed PRSL tests.
+## Direct source recovery — completed 2026-10-07
 
-## Archival artifacts **present** in this handoff
+- User-uploaded original Lab ZIP: `moo2_prsl_lab_v0.2.0(1).zip` (47,187 B), SHA-256 `2042783f391e635fd0db62ccd5a87a20b5350050afa8d8f9e739abb285e8904e`.
+- The safe handoff importer placed all 31 original members into [`lab/`](../lab/), preserving exact extracted member bytes. Full metadata are in [`lab-import-provenance.json`](../lab-import-provenance.json). No original ZIP is distributed here.
+- [`lab/SOURCE_SHA256SUMS.txt`](../lab/SOURCE_SHA256SUMS.txt) contains original hashes for the 30 other files. Re-run `python tools/verify_lab_provenance.py` to check them and the imported archive provenance.
+- [`docs/SOURCE-RESTORATION-2026-10-07.md`](SOURCE-RESTORATION-2026-10-07.md) describes current tests and blockers. The pre-import audit is retained unchanged under `provenance/2026-10-07-before-source-import/`; its conclusion that source bytes were unavailable is now superseded.
 
-| New path | Earlier project record | Scope |
-|---|---|---|
-| `research/archive-v0.1.0/DESIGN.md` | `DESIGN.md` (created 2026-10-04) | Original proposed feature spec, not implementation |
-| `research/archive-v0.2.0/README.md` | `README.md` (updated 2026-10-05) | Original Lab v0.2.0 inventory, tests and limits |
-| `research/archive-v0.2.0/BINARY_REPORT.md` | `BINARY_REPORT.md` | Exact-hash reverse engineering findings |
-| `research/archive-v0.2.0/TEST_METHOD.md` | `TEST_METHOD.md` | Historical test methodology/limitations |
-| `research/archive-v0.2.0/target-map.json` | `target-map.json` | Machine-readable exact-build offsets/false capability flags |
-| `research/archive-v0.2.0/evidence/python-tests.log` | `python-tests.log` | Earlier 52-test suite output |
-| `research/archive-v0.2.0/evidence/native-probe.log` | `native-probe.log` | Earlier 30 isolated native checks |
-| `research/archive-v0.2.0/evidence/old-coordinator-regression.json` | Same | v0.1.0 defect reproduction |
-| `research/archive-v0.2.0/evidence/installer-verify.json` | Same | Historical 944-file workspace integrity |
-| `research/archive-v0.2.0/evidence/workspace-integration-tests.json` | Same | Historical 6 safety scenarios |
-| `reference/launcher/REQUIREMENTS-0.1.0.md` | Launcher requirements addendum | Separation of feature and launcher, neutral mod selection |
-| `reference/launcher/NETWORK-AND-PROFILES-0.4.7.md` | Launcher 0.4.7 reference | Network plan and disabled PRSL |
-| `reference/launcher/TEST-REPORT-0.4.7.md` | Launcher 0.4.7 report | Launcher tests and unverified actual gameplay |
+## Other preserved research
 
-Archival file contents were obtained through the project's text extraction pathway; original line endings, text encoding and final newline bytes may not be identical to original source files. The GitHub handoff copies are readable textual snapshots rather than a claim of byte-faithful preservation. `target-map.json` and evidence JSON can be parsed after normalization.
+| New path | Origin / scope |
+|---|---|
+| `research/archive-v0.1.0/DESIGN.md` | Earlier project design text, not executable source |
+| `research/archive-v0.2.0/README.md`, `BINARY_REPORT.md`, `TEST_METHOD.md`, `target-map.json` | Prior text renditions of Lab v0.2 research, now supplemented by **actual original files** under `lab/` |
+| `research/archive-v0.2.0/evidence/` | Historical test-log text snapshots; original logs also under `lab/evidence/` |
+| `reference/launcher/` | Launcher boundary and 0.4.7 references (not PRSL source) |
 
-## Located but **not embedded** original archives
+The originals of `moo2_prsl_lab_v0.1.0.zip` (13,366 B) and `MOO2_PRSL_Research_Design_v0.1.0.zip` (20,694 B) were located in Library but have **not** been imported as binary source archives. The v0.2.0 package contains v0.1 regression evidence and the subsequent coordinator fix; earlier ZIPs remain optional historical provenance.
 
-| Prior file | Reported size | Retrieval outcome |
-|---|---:|---|
-| `MOO2_PRSL_Research_Design_v0.1.0.zip` | 20,694 B | Located in Library; raw bytes unavailable for materialization |
-| `moo2_prsl_lab_v0.1.0.zip` | 13,366 B | Located; raw bytes unavailable |
-| **`moo2_prsl_lab_v0.2.0.zip`** | **47,187 B** | Located; raw bytes unavailable; this is the required original Python/C source archive |
+## Third-party/exact-engine limitations
 
-The parent MOO2-SGC Launcher has separate v0.4.7 repository ZIPs and the licensed user owns game/patch archives. These were **not** copied into this repo. No substitute original-source file was invented.
+The actual `ORION150.EXE` 1.50.26 game binary was not supplied to this recovery; therefore all nine engine-structural tests were skipped, as expected. No game, launcher binary, community patch, DOSBox or original ZIP archive is stored in the PRSL repository. The Lab's stored native-probe and workspace-build results remain historical evidence, not newly reproduced claims.
 
-## External references, distinct from internal evidence
-
-- [MOO2 fan patch landing page](https://www.moo2mod.com/) — supported community patch/version provenance.
-- [MOO2 1.50 modding documentation](https://moo2mod.com/doc/150/modding.html) — mod descriptors, `.CFG`/Lua support, not a PRSL hook API.
-- [MOO2 1.50 scripting documentation](https://www.moo2mod.com/doc/150/scripting.html) — limited Lua contexts, not proof of pre-turn interception.
-- [DOSBox Staging HTTP API documentation](https://www.dosbox-staging.org/0.83/manual/http-api/) — potential research transport, not a certified live hook.
-
-## Research caveats worth keeping visible
-
-- `Human_Hit_Next_Turn_` was a read-only getter, not the native submission site.
-- Engine offsets require exact identity and relocation resolution; file offsets are not live memory addresses.
-- A second automatic native caller was discovered; the tested early manual gate alone cannot guarantee turn safety.
-- Original v0.2.0 reports single-process isolated x86 tests, not DOSBox game or two-player acceptance.
-- Original v0.2.0 signed catalog verifier was offline/partial and required an independent trusted key; it was not a production updater.
+Link to the dedicated repository: https://github.com/MOO2-Social-Gaming-Community/PRSL-Mod . GitHub upload/push still requires access from the user or an authorized connector; this source package alone is not a remote commit.

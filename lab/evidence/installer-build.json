@@ -1,0 +1,11 @@
+{
+  "destination": "/mnt/data/prsl_work/managed-15026",
+  "files": 944,
+  "original_files_changed": [],
+  "prsl": {
+    "version": "0.2.0",
+    "runtime_certified": false,
+    "installable_adapter": false,
+    "reason": "Only isolated instruction tests; no live DOSBox/IPX certification"
+  }
+}

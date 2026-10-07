@@ -1,15 +1,17 @@
-# Historical PRSL research index
+# PRSL research and original source index
 
-- [PRSL v0.1.0 proposed design](research/archive-v0.1.0/DESIGN.md)
-- [PRSL Lab v0.2.0 original README](research/archive-v0.2.0/README.md)
-- [Exact-engine binary analysis](research/archive-v0.2.0/BINARY_REPORT.md)
-- [Machine-readable target map](research/archive-v0.2.0/target-map.json)
-- [Historical test method](research/archive-v0.2.0/TEST_METHOD.md)
-- [Historical 52-test log](research/archive-v0.2.0/evidence/python-tests.log)
-- [Historical 30-check native probe log](research/archive-v0.2.0/evidence/native-probe.log)
-- [Historical regression reproduction](research/archive-v0.2.0/evidence/old-coordinator-regression.json)
-- [Historical workspace verification](research/archive-v0.2.0/evidence/installer-verify.json)
-- [Historical workspace safety checks](research/archive-v0.2.0/evidence/workspace-integration-tests.json)
-- [Original source import details](docs/ORIGINAL-SOURCE-IMPORT.md)
+- [Recovered original PRSL Lab v0.2.0 source and historical tests](lab/README.md) (**now present, intact**)
+- [Exact source import provenance](lab-import-provenance.json) and [original per-file checksums](lab/SOURCE_SHA256SUMS.txt)
+- [Current source restoration report](docs/SOURCE-RESTORATION-2026-10-07.md)
+- [Earlier proposed v0.1.0 design](research/archive-v0.1.0/DESIGN.md) (text archive)
+- [Earlier v0.2.0 research report](research/archive-v0.2.0/BINARY_REPORT.md) (text archive)
+- [Original exact-engine target map](lab/research/target-map.json)
+- [Original test methodology](lab/research/TEST_METHOD.md)
+- [Original historical 52-test evidence](lab/evidence/python-tests.log)
+- [Original historical 30-check isolated x86 log](lab/evidence/native-probe.log)
+- [Coordinator v0.1.0 regression reproduction](lab/evidence/old-coordinator-regression.json)
+- [Historical workspace audit](lab/evidence/installer-verify.json)
+- [Historical workspace integration checks](lab/evidence/workspace-integration-tests.json)
+- [Earlier missing-source recovery audit (superseded)](provenance/2026-10-07-before-source-import/docs/RECOVERY-AUDIT-2026-10-07.md)
 
-**The research index does not imply the original `.py`/`.c` source has been imported into `lab/`, or that any in-game PRSL test has been performed.**
+**Both the original test logs and current rerun results are real artifacts, but they represent different runs and scopes. Neither is evidence that PRSL now runs inside MOO2.**

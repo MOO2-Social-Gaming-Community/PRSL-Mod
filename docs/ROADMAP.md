@@ -1,8 +1,10 @@
 # PRSL continuation roadmap — prioritized engineering plan
 
+> **Source status update (2026-10-07): P0 original Lab v0.2.0 source recovery COMPLETE.** Source was imported intact into `lab/`, checksum-verified, and its offline suite rerun (52 tests, 43 pass / 9 skip). The first active engineering milestone is P1 read-only live engine observation. All other P0 checkboxes about publication/licensing remain decisions for the project owner; no playable mod exists.
+
 The goal is **a safe, community-acceptable optional enhancement**, not a rushed invasive executable patch. Confidence claims rise only when appropriate tests have passed. The project author intends to continue PRSL work after the October 2026 India trip; no in-person community launch or tournament depends on completing the PRSL adapter immediately.
 
-## P0 — Preserve existing R&D (first next commit)
+## P0 — Preserve existing R&D (source import completed; GitHub commit still pending)
 
 - Obtain `moo2_prsl_lab_v0.2.0.zip` from the original project Library files and run `tools/import_original_lab.py`.
 - Verify `lab/prsl/state.py`, `lab/prsl/binary150.py`, `lab/prsl/lab_gate.py`, `lab/prsl/packages.py`, `lab/prsl/cli.py`, `lab/prsl/updates.py`, `lab/tools/native_probe.c`, `lab/tools/run_native_probe.py`, `lab/tests/`, plus original README/research/evidence.

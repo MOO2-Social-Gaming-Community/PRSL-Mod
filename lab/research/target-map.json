@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "engine_sha256": "2db296e052419250d21866f7c23ac2978a33b3c05b451a9516f06599b91c3f5c",
+  "bound_mz": 157268,
+  "le_header": 168676,
+  "code_file_origin": 611988,
+  "le_relocation_count": 51363,
+  "extension_relocation_count": 24655,
+  "symbols": [
+    {
+      "name": "Human_Hit_Next_Turn_",
+      "object": 1,
+      "offset": 959907,
+      "module": 112,
+      "kind": 4,
+      "debug_record_file_offset": 2551778,
+      "file_offset": 1571895
+    },
+    {
+      "name": "Do_Next_Turn_",
+      "object": 1,
+      "offset": 472081,
+      "module": 52,
+      "kind": 4,
+      "debug_record_file_offset": 2470072,
+      "file_offset": 1084069
+    },
+    {
+      "name": "Main_Screen_",
+      "object": 1,
+      "offset": 483720,
+      "module": 52,
+      "kind": 4,
+      "debug_record_file_offset": 2471451,
+      "file_offset": 1095708
+    },
+    {
+      "name": "Net_Next_Turn_",
+      "object": 1,
+      "offset": 967792,
+      "module": 114,
+      "kind": 4,
+      "debug_record_file_offset": 2553147,
+      "file_offset": 1579780
+    },
+    {
+      "name": "Host_Next_Turn_",
+      "object": 1,
+      "offset": 966626,
+      "module": 114,
+      "kind": 5,
+      "debug_record_file_offset": 2553055,
+      "file_offset": 1578614
+    },
+    {
+      "name": "Client_Next_Turn_",
+      "object": 1,
+      "offset": 967378,
+      "module": 114,
+      "kind": 5,
+      "debug_record_file_offset": 2553120,
+      "file_offset": 1579366
+    },
+    {
+      "name": "Chat_Box_Input_Loop_",
+      "object": 1,
+      "offset": 939428,
+      "module": 111,
+      "kind": 4,
+      "debug_record_file_offset": 2549737,
+      "file_offset": 1551416
+    },
+    {
+      "name": "Screen_Control_",
+      "object": 1,
+      "offset": 1179,
+      "module": 1,
+      "kind": 4,
+      "debug_record_file_offset": 2408000,
+      "file_offset": 613167
+    },
+    {
+      "name": "Assert_Settings_",
+      "object": 1,
+      "offset": 977085,
+      "module": 117,
+      "kind": 4,
+      "debug_record_file_offset": 2554778,
+      "file_offset": 1589073
+    },
+    {
+      "name": "_current_screen",
+      "object": 2,
+      "offset": 137736,
+      "module": 0,
+      "kind": 2,
+      "debug_record_file_offset": 2403741,
+      "file_offset": null
+    },
+    {
+      "name": "_game_type",
+      "object": 2,
+      "offset": 139066,
+      "module": 0,
+      "kind": 2,
+      "debug_record_file_offset": 2407793,
+      "file_offset": null
+    },
+    {
+      "name": "_next_turn_hit",
+      "object": 2,
+      "offset": 147864,
+      "module": 52,
+      "kind": 2,
+      "debug_record_file_offset": 2468486,
+      "file_offset": null
+    },
+    {
+      "name": "_next_button",
+      "object": 2,
+      "offset": 147810,
+      "module": 52,
+      "kind": 2,
+      "debug_record_file_offset": 2467562,
+      "file_offset": null
+    },
+    {
+      "name": "_skip_fields",
+      "object": 2,
+      "offset": 137590,
+      "module": 0,
+      "kind": 2,
+      "debug_record_file_offset": 2401648,
+      "file_offset": null
+    },
+    {
+      "name": "_random_seed",
+      "object": 2,
+      "offset": 269876,
+      "module": 143,
+      "kind": 3,
+      "debug_record_file_offset": 2586795,
+      "file_offset": null
+    }
+  ],
+  "reader": {
+    "object": 1,
+    "offset": 959907,
+    "file_offset": 1571895,
+    "bytes": "8a807e2f0300c3",
+    "flag_object": 2,
+    "flag_offset": 208766,
+    "input": "EAX player index",
+    "output": "AL; upper EAX unchanged"
+  },
+  "candidate": {
+    "object": 1,
+    "offset": 486776,
+    "file_offset": 1098764,
+    "original_bytes": "e8407b0700",
+    "defer_to": 486814,
+    "allow_call": 977085,
+    "allow_resume": 486781,
+    "status": "isolated-machine-code-tested; NOT full-game-certified"
+  },
+  "secondary_candidate": {
+    "offset": 472081,
+    "file_offset": 1084069,
+    "bytes": "53515689c6",
+    "limitation": "Manual caller has already written native UI/turn-intent flags"
+  },
+  "main_event": {
+    "condition_block": 486754,
+    "turn_field": {
+      "name": "_next_button",
+      "object": 2,
+      "offset": 147810,
+      "module": 52,
+      "kind": 2,
+      "debug_record_file_offset": 2467562,
+      "file_offset": null
+    },
+    "guard": {
+      "name": "_skip_fields",
+      "object": 2,
+      "offset": 137590,
+      "module": 0,
+      "kind": 2,
+      "debug_record_file_offset": 2401648,
+      "file_offset": null
+    },
+    "native_call": 486809,
+    "other_direct_call": 503577,
+    "caller_exit_flag": "16-bit stack local passed via EAX; do not persist its address"
+  },
+  "native_submission": {
+    "function": 967792,
+    "done_flag_write": 967966,
+    "network_message_send_call": 968068,
+    "dispatch_call": 1875,
+    "extension_wrapper_offset": 20210,
+    "wrapper_preserves": {
+      "symbol": {
+        "name": "_random_seed",
+        "object": 2,
+        "offset": 269876,
+        "module": 143,
+        "kind": 3,
+        "debug_record_file_offset": 2586795,
+        "file_offset": null
+      },
+      "extension_snapshot_offset": 20206
+    }
+  },
+  "capabilities": {
+    "native_game_integration": false,
+    "all_input_paths": false,
+    "locked_pre_ready_ui": false,
+    "automatic_commit_in_game": false
+  }
+}

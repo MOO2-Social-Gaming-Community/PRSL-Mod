@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "project": "Master of Orion II Pre-ready State Layer",
+  "lab_version": "0.2.0",
+  "date_local": "2026-10-04",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "compiler": "gcc (Debian 14.2.0-19) 14.2.0",
+  "engine_sha256": "2db296e052419250d21866f7c23ac2978a33b3c05b451a9516f06599b91c3f5c",
+  "results": {
+    "python_tests": {
+      "passed": 52,
+      "failed": 0,
+      "skipped": 0
+    },
+    "isolated_x86_checks": {
+      "passed": 30,
+      "failed": 0
+    },
+    "workspace_checks": {
+      "passed": 6,
+      "failed": 0
+    },
+    "installation": {
+      "base_files": 816,
+      "patch_files": 128,
+      "files_verified": 944,
+      "original_files_changed": 0
+    }
+  },
+  "not_executed": [
+    "DOSBox game startup",
+    "two-client IPX session",
+    "live PRSL injection",
+    "native next-turn resolution",
+    "Windows acceptance",
+    "macOS acceptance",
+    "network updater"
+  ],
+  "release_gate": {
+    "runtime_certified": false,
+    "installable_adapter": false
+  }
+}
