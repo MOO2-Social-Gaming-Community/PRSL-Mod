@@ -1,0 +1,43 @@
+# Python / tests
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.coverage
+htmlcov/
+
+# Local archives and game files — NEVER COMMIT
+*.zip
+*.7z
+*.rar
+*.exe
+*.EXE
+*.com
+*.COM
+*.lbx
+*.LBX
+*.GAM
+*.gam
+*.SAV
+*.sav
+*.key
+*.pem
+*.p12
+*.pfx
+*.sig
+
+# Local game runtime and workspace
+workspaces/
+cache/
+staging/
+runtime/
+userdata/
+private/
+local/
+
+# Operating system
+.DS_Store
+Thumbs.db

@@ -1,0 +1,30 @@
+{
+  "scope": "actual-944-file-installed-workspace; no game execution",
+  "checks": [
+    {
+      "name": "changed-engine-refused",
+      "pass": true
+    },
+    {
+      "name": "save-edit-not-repaired-or-blocked",
+      "pass": true
+    },
+    {
+      "name": "prsl-live-launch-refused",
+      "pass": true
+    },
+    {
+      "name": "base-source-unchanged",
+      "pass": true
+    },
+    {
+      "name": "patch-source-unchanged",
+      "pass": true
+    },
+    {
+      "name": "workspace-restored-and-verifies",
+      "pass": true
+    }
+  ],
+  "all_passed": true
+}

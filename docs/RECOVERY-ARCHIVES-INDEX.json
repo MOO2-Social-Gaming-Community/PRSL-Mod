@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "recorded_date": "2026-10-07",
+  "original_handoff_sha256": "ece9cc49d6705da1fdaa787000643e26d44ae2d07bb7e71c07da155c9aa65647",
+  "original_handoff_path": "MOO2-SGC-PRSL-GitHub-Handoff-2026-10-07.zip",
+  "original_handoff_file_checksums_verified": 41,
+  "historical_archives": [
+    {
+      "name": "MOO2_PRSL_Research_Design_v0.1.0.zip",
+      "size_bytes": 20694,
+      "created_at_utc": "2026-10-04T23:07:43.849972Z",
+      "library_path": "/Master of Orion 2/MOO2_PRSL_Research_Design_v0.1.0.zip",
+      "status": "located-in-user-library; raw-bytes-unavailable-in-this-session",
+      "sha256": null,
+      "type": "historical-design-archive"
+    },
+    {
+      "name": "moo2_prsl_lab_v0.1.0.zip",
+      "size_bytes": 13366,
+      "created_at_utc": "2026-10-04T23:24:49.022036Z",
+      "library_path": "/Master of Orion 2/moo2_prsl_lab_v0.1.0.zip",
+      "status": "located-in-user-library; raw-bytes-unavailable-in-this-session",
+      "sha256": null,
+      "type": "historical-coordinator-implementation"
+    },
+    {
+      "name": "moo2_prsl_lab_v0.2.0.zip",
+      "size_bytes": 47187,
+      "created_at_utc": "2026-10-05T00:06:57.317794Z",
+      "library_path": "/Master of Orion 2/moo2_prsl_lab_v0.2.0.zip",
+      "status": "located-in-user-library; raw-bytes-unavailable-in-this-session",
+      "sha256": null,
+      "type": "required-authoritative-python-c-implementation"
+    }
+  ],
+  "source_zip_bytes_embedded": false,
+  "original_v0_2_0_source_imported": false,
+  "historical_tests_reexecuted": false,
+  "live_prsl_certified": false
+}

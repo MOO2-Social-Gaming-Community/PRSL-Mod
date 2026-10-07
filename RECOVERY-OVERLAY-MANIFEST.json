@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "created": "2026-10-07",
+  "purpose": "read-only-recovery-audit-addendum",
+  "original_handoff_sha256": "ece9cc49d6705da1fdaa787000643e26d44ae2d07bb7e71c07da155c9aa65647",
+  "original_manifest_still_valid": true,
+  "original_lab_source_included": false,
+  "file_checksums": [
+    {
+      "path": "RECOVERY-START-HERE.md",
+      "size_bytes": 1428,
+      "sha256": "f151ced2858266572570da1469b81a116ae6b979f83276d2ccf925d440b50a00"
+    },
+    {
+      "path": "docs/RECOVERY-AUDIT-2026-10-07.md",
+      "size_bytes": 6935,
+      "sha256": "025d19fbb8fd4cf29749c82e4b35caaa2cf9f4926ad26f89085cc6f077263dfc"
+    },
+    {
+      "path": "docs/RECOVERY-ARCHIVES-INDEX.json",
+      "size_bytes": 1570,
+      "sha256": "f6e117c50ef55f5f9fc5f5cf39a0b1c230ca9ce64dc3f4dedbd0b0aa84661a54"
+    }
+  ]
+}

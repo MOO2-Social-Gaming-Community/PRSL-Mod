@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "handoff_date": "2026-10-07",
+  "handoff_kind": "research-documentation-and-safe-import-tooling",
+  "original_source_zip_embedded": false,
+  "prsl_live_integration_certified": false,
+  "historical_feature_version": "0.2.0",
+  "description": "Research and development handoff; not a playable PRSL or merged v0.2.0 source repository.",
+  "file_checksums": [
+    {
+      "path": ".gitattributes",
+      "sha256": "77063832709474f0adeff8f8dc3ca589bfa603fc423aebcfb670d7a7569dccc7",
+      "size_bytes": 136
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+      "sha256": "439f604986e732b6d1552a1a5d23fa9ce04bed1923a05d1d3b2ebee6a9c25354",
+      "size_bytes": 514
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a",
+      "size_bytes": 27
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/research-task.md",
+      "sha256": "f58b6eebe4a9c71d8454f1c599043467f65f73cbb93f487e80fbd1950fbcfcb9",
+      "size_bytes": 480
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "sha256": "e10f59050f537fecd79073edb856fd446d30b76262c7c11fb8ec0f2f65f11a5f",
+      "size_bytes": 815
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "f845fecae1208fe1d4fd8ca3de038dc0fc2f4feccb6905ae51fc089fc087d12a",
+      "size_bytes": 409
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "fcb888aa515dbf2a27e96ddbca5466e46d8e88c612588095d318a70d657d5374",
+      "size_bytes": 1529
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "8746422f555aeafedbd5115a66769c1d8c109981752207d4dea1f992ac1546eb",
+      "size_bytes": 1956
+    },
+    {
+      "path": "LICENSE-STATUS.md",
+      "sha256": "8a5cfbb862fd2ee686da34398b4019786c59b890b94a6725520e733b6257fea3",
+      "size_bytes": 1262
+    },
+    {
+      "path": "README.md",
+      "sha256": "967cefb6701bf1b60f74fc8bc6d65b29009c9754e441836b91b7a9b5d9f2e42e",
+      "size_bytes": 7602
+    },
+    {
+      "path": "RESEARCH-INDEX.md",
+      "sha256": "45ba40264a906676d81d2fae1106aebcc1d8534245755337c5ec9872c5cf3415",
+      "size_bytes": 1080
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "3237a749edd1298014c7e0faa4d2c1b8c63b30c23c391793da5b5885ba1d3165",
+      "size_bytes": 1366
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "dc9ccdf665a6379abef67c0938371ef009b329c707a6e2eac0c5e9d1a2e03acf",
+      "size_bytes": 1193
+    },
+    {
+      "path": "docs/ACCEPTANCE-TESTS.md",
+      "sha256": "5b208532575d68e7765d1662df15a02c11c42ff6d06c4cb17bf1bb875d00f0ba",
+      "size_bytes": 5122
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "3100ed517406ed616dedf729424a122de9149480757bc0676bad9de8c081eaf4",
+      "size_bytes": 6003
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "c7394b0ac6db54945bdf375e7a35ce16879f3fe503fab1dd9353663f3e58e434",
+      "size_bytes": 3155
+    },
+    {
+      "path": "docs/ENGINE-RESEARCH.md",
+      "sha256": "82d3ff0ea0de8ad7e068956f0edfb35483d879aef29f935de789db050f65286d",
+      "size_bytes": 4984
+    },
+    {
+      "path": "docs/HANDOFF-CHECKLIST.md",
+      "sha256": "f957b479f932e3a3de3e9dfb1c5aa89147e85d77194dec7a1c96ee8a23163ce5",
+      "size_bytes": 2084
+    },
+    {
+      "path": "docs/HANDOFF-SOURCES.md",
+      "sha256": "dbf0964c51ef3f8d1a9728e5986262ca5e82264ce6850cf0f5a98b1eee72dbd7",
+      "size_bytes": 4083
+    },
+    {
+      "path": "docs/ISSUE-BACKLOG.md",
+      "sha256": "044e52b4be8de4045d3618dfeec119a76aec192c19790924e49bcf25e978ea78",
+      "size_bytes": 3900
+    },
+    {
+      "path": "docs/LAUNCHER-INTEGRATION.md",
+      "sha256": "649c07f04a054f7ea6e88a6ab7e039d874cd8c1285132a9912249612ae9c585e",
+      "size_bytes": 2906
+    },
+    {
+      "path": "docs/ORIGINAL-SOURCE-IMPORT.md",
+      "sha256": "950ba5d96da809bf4dbfbd12659d1280f650f2698cb9ff7935fed71df1247674",
+      "size_bytes": 4051
+    },
+    {
+      "path": "docs/RD-HISTORY.md",
+      "sha256": "c1eda53bd022acec41561cab1ed91598ad878c67d2561aeaa7ff8e31deae3719",
+      "size_bytes": 6014
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "sha256": "38b5b75fd480bb3c9cb41d2313b4ace644aa6fb86458964203a55b57ae2d68fc",
+      "size_bytes": 6171
+    },
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "8a4e21223f341802b79a2d0132cc2c07a569fb37b20a9d9165fac0d53a5c5b2c",
+      "size_bytes": 4346
+    },
+    {
+      "path": "reference/launcher/NETWORK-AND-PROFILES-0.4.7.md",
+      "sha256": "b1c667304fa005b277b7e4b2b69ff5d630928a9ac42a2f4c20ed07d70ddf1268",
+      "size_bytes": 5702
+    },
+    {
+      "path": "reference/launcher/REQUIREMENTS-0.1.0.md",
+      "sha256": "753d5f9d55c2d6e9bfba715713113e656eff198598d0480a66d2e9ed9a4988d8",
+      "size_bytes": 16207
+    },
+    {
+      "path": "reference/launcher/TEST-REPORT-0.4.7.md",
+      "sha256": "f7d661e68d3e7005edaa40169a18f10e8dc1d2da78b4b6350cae78c1ef00aa27",
+      "size_bytes": 4414
+    },
+    {
+      "path": "research/archive-v0.1.0/DESIGN.md",
+      "sha256": "46d524c2a56b79f74006a2241b54f2a052f38bceeb0599e25885c3b21644fc1f",
+      "size_bytes": 18246
+    },
+    {
+      "path": "research/archive-v0.2.0/BINARY_REPORT.md",
+      "sha256": "03e576a275ee5047c8700740d88dcf2f87397c08aa14209865569d1c8929d125",
+      "size_bytes": 10783
+    },
+    {
+      "path": "research/archive-v0.2.0/README.md",
+      "sha256": "f8736bf699146f410817b37266fef7c30e7517de44b203716c9f25d191259a93",
+      "size_bytes": 6967
+    },
+    {
+      "path": "research/archive-v0.2.0/TEST_METHOD.md",
+      "sha256": "95198119f349caa6a1065b1e4ae9968f5cbdb03ce8138c4dd6a97227985567ff",
+      "size_bytes": 6587
+    },
+    {
+      "path": "research/archive-v0.2.0/evidence/installer-verify.json",
+      "sha256": "a3547b1e1b8aba6cca4e730bde7b4512f1e66da4f0c7269445e88ff1b8af7623",
+      "size_bytes": 181
+    },
+    {
+      "path": "research/archive-v0.2.0/evidence/native-probe.log",
+      "sha256": "dc2838bac9079a85b94a0534c86ca90e3a85a50da16dedbed9056819801cda28",
+      "size_bytes": 1405
+    },
+    {
+      "path": "research/archive-v0.2.0/evidence/old-coordinator-regression.json",
+      "sha256": "6cba180418ca58613413ad232d4c2b4dd52e90298c3ef1a2d7a1badd0e9974c2",
+      "size_bytes": 192
+    },
+    {
+      "path": "research/archive-v0.2.0/evidence/python-tests.log",
+      "sha256": "075ae4e16c7c4c543266e287e8bb86d86a298f78f2db2f1e840f70aab8b5e76c",
+      "size_bytes": 5444
+    },
+    {
+      "path": "research/archive-v0.2.0/evidence/workspace-integration-tests.json",
+      "sha256": "28d3dd01f3f50aa3711470bfa32a2fae239bfe95b4cf861ee18a0c77dbb5ddbb",
+      "size_bytes": 564
+    },
+    {
+      "path": "research/archive-v0.2.0/target-map.json",
+      "sha256": "25d8208344b9dfccd705cb16af8f6f39ded2bef9add2975c75208b1ab60d2e9c",
+      "size_bytes": 5176
+    },
+    {
+      "path": "tests/test_import_original_lab.py",
+      "sha256": "48e537f5f3e60c22572272dd45135505896ff408613a46120e27855324de3caa",
+      "size_bytes": 4110
+    },
+    {
+      "path": "tools/import_original_lab.py",
+      "sha256": "11292903f8b04f56d956c1a5ba6fe50fe47c064e8d03c220e29e485d440b320d",
+      "size_bytes": 9586
+    },
+    {
+      "path": "tools/validate_handoff.py",
+      "sha256": "c6a017428e05b94c7a3de9a26f3f28b9bd68f403b9b7278d4b9f6298c6bdd65f",
+      "size_bytes": 3942
+    }
+  ]
+}
